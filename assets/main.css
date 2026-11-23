@@ -191,3 +191,34 @@ input.invalid,textarea.invalid{border-color:#a12a1f}
 }
 @media (max-width:600px){.course-grid,.woocommerce ul.products,.post-grid{grid-template-columns:minmax(0,1fr)}.hero-grid{border-radius:24px}.cta-band .btn{width:100%}.actions .btn{flex:1 1 100%}.woocommerce table.shop_table td{padding:.75rem}.woocommerce #coupon_code{width:100%;margin-bottom:.5rem}.instructor{flex-direction:column;text-align:center}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* ---- Single product: richer layout ---- */
+.woocommerce div.product div.summary{background:#fff;border-radius:28px;padding:clamp(1.25rem,3vw,2.25rem);box-shadow:var(--shadow)}
+.woocommerce div.product div.images{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 18px 40px rgba(23,59,45,.16)}
+.woocommerce div.product div.images img{border-radius:0;width:100%;aspect-ratio:3/2;object-fit:cover}
+.woocommerce div.product div.images::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,rgba(23,59,45,.25))}
+.woocommerce div.product .product_title{margin-bottom:.4rem}
+.woocommerce div.product .woocommerce-product-rating{margin:0 0 .5rem}
+.discount-pill{display:inline-block;background:var(--orange);color:#20251F;font-weight:800;font-size:.85rem;border-radius:999px;padding:.1rem .9rem;margin-bottom:.4rem}
+.woocommerce div.product p.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem;font-size:clamp(1.5rem,3vw,2rem);margin:.25rem 0 1rem}
+.woocommerce div.product p.price del{font-size:1rem;opacity:.6}
+.woocommerce div.product .woocommerce-product-details__short-description{color:var(--muted);margin-bottom:1.25rem}
+.woocommerce div.product form.cart{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:0 0 1rem}
+.woocommerce div.product form.cart .button{flex:1 1 220px}
+.trust-mini{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;padding:0;margin:0 0 1.25rem;color:var(--muted);font-size:.9rem}
+.trust-mini li{display:flex;align-items:center;gap:.4rem}.trust-mini .icon{width:18px;height:18px;color:var(--green)}
+.stat-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;margin:1rem 0}
+.stat-tiles>div{background:var(--cream);border-radius:18px;padding:.8rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.1rem}
+.stat-tiles strong{font-size:1.4rem;color:var(--green);line-height:1.4;display:flex;align-items:center}.stat-tiles span{font-size:.8rem;color:var(--muted)}
+.course-features{display:grid;gap:.5rem}
+.course-features li{background:var(--cream);border-radius:12px;padding:.5rem .8rem;margin:0}
+.woocommerce div.product .woocommerce-tabs ul.tabs{border:0;gap:.6rem}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{background:#fff;border-radius:999px;padding:.5rem 1.2rem;box-shadow:var(--shadow)}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{background:var(--green);color:#fff;box-shadow:none}
+.curriculum{list-style:none;padding:0;margin:0;counter-reset:l;display:grid;gap:.6rem}
+.curriculum li{counter-increment:l;display:flex;align-items:center;gap:.9rem;background:var(--cream);border:0;border-radius:16px;padding:.8rem 1rem}
+.curriculum li::before{content:counter(l);flex:none;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.instructor{background:linear-gradient(135deg,#fff,var(--beige));border-radius:28px;padding:1.5rem}
+.instructor img{width:110px;height:110px;border:4px solid #fff;box-shadow:var(--shadow)}
+.woocommerce div.product .related>h2{margin-top:1.5rem}
+@media (max-width:600px){.woocommerce div.product div.images,.woocommerce div.product div.summary{border-radius:22px}.stat-tiles{grid-template-columns:repeat(3,1fr)}}
