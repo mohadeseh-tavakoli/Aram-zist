@@ -20,7 +20,7 @@ add to cart / cart update / coupon, mail delivery from the contact form, mobile 
 4. Install and activate **WooCommerce** (only required plugin). Run its setup wizard; Currency: Iranian Toman (or Rial).
 5. Create pages: **Home**, **About** (slug `about`, template «درباره من»), **Contact** (slug `contact`, template «تماس با من»), **Blog**.
    Settings → Reading: static front page = Home, posts page = Blog. WooCommerce creates Shop, Cart, Checkout, My account.
-6. Appearance → Menus: assign a menu to «منوی اصلی» (otherwise a default Persian menu is shown) and optionally «منوی فوتر».
+6. Menus: by design the header and footer show **no navigation links** until you assign a menu in Appearance → Menus («منوی اصلی» / «منوی فوتر»). Pages stay reachable through the hero buttons, cards and footer contact button.
 
 ## Managing content
 - **Courses**: Products → Add New. Use the short description (shown on cards), featured image, price/sale price, categories.
@@ -48,3 +48,6 @@ Course access/delivery after purchase (video hosting, membership/LMS) is **not**
 ## Structure
 `functions.php` loads `inc/` (setup, enqueue, customizer, template-functions, security, woocommerce). `template-parts/` holds hero, course card, testimonials, FAQ.
 WooCommerce is styled through hooks and CSS; the only template file is the `woocommerce.php` wrapper.
+
+## Images
+`assets/images/courses/01–04.jpg` are used automatically for any product without a featured image (and as the default product placeholder). Upload a featured image on a product to replace them.
