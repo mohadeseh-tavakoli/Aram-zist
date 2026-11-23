@@ -1,5 +1,9 @@
 # آرام زیستن | Aram Zist — WordPress/WooCommerce theme
 
+**Live design preview:** https://mohadeseh-tavakoli.github.io/Aram-zist/ (static preview of the design; the full theme requires WordPress + WooCommerce)
+
+![Homepage preview](docs/assets/home-desktop.png)
+
 Persian, RTL theme for a psychologist who sells online personal-development courses.
 Courses are standard WooCommerce products; cart, checkout, coupons, orders and payment gateways are native WooCommerce.
 
@@ -7,7 +11,7 @@ Courses are standard WooCommerce products; cart, checkout, coupons, orders and p
 This theme was written without a running WordPress/PHP environment. **Nothing has been executed yet.**
 Not yet verified (please test on a real install, e.g. LocalWP): theme activation, PHP syntax/notices, WooCommerce pages,
 add to cart / cart update / coupon, mail delivery from the contact form, mobile layout in browsers, console errors.
-`screenshot.png` is the supplied design mockup, not a render of this theme. Replace it with a real 1200×900 screenshot.
+`screenshot.png` and the `docs/` preview come from a static HTML render using the theme's CSS, not from a running WordPress site.
 
 ## Install
 1. Zip the `aram-zist` folder (or use the provided `aram-zist.zip`).
