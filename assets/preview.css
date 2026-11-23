@@ -1,0 +1,3 @@
+.demo-bar{background:#20251F;color:#f3ede4;text-align:center;font-size:.85rem;padding:.4rem 1rem}.demo-bar a{color:#D99145}
+.ph{aspect-ratio:16/11;display:block}.g1{background:linear-gradient(135deg,#173B2D,#4f7a5e)}.g2{background:linear-gradient(135deg,#D99145,#e8c08a)}.g3{background:linear-gradient(135deg,#6b8f71,#E8E1D2)}.g4{background:linear-gradient(135deg,#E8E1D2,#b9a98a)}
+.shop-wrap{display:grid;grid-template-columns:260px 1fr;gap:2rem}@media(max-width:1024px){.shop-wrap{grid-template-columns:1fr}}
